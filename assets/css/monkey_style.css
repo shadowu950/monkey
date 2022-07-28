@@ -418,9 +418,27 @@ body{
     min-width: 750px;
     }
 }
-
 @media (max-width:767px){
     .container{
-        min-width: none;
+        min-width: 600px;
+    }
+    .title{
+        font-size: 0.5em;
+    }
+    .header_img{
+    min-width: 600px;
+    }
+}
+
+
+@media (max-width:620px){
+    .container{
+        min-width: 450px;
+    }
+    .title{
+        font-size: 0.2em;
+    }
+    .header_img{
+    min-width: 450px;
     }
 }
