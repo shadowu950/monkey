@@ -1,0 +1,424 @@
+body{
+    margin:0;
+    font-size: 20px;
+    color: #f8f8f8;
+    background-color: #000;
+    line-height: 30px;
+}
+
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.container{
+    max-width:1900px;
+    width:1280px;
+    margin: 0 auto;
+    padding: 1;
+}
+
+
+
+
+/* HEADER */
+
+.header_img{
+    width: 100%;
+    height: 75vh;
+    background: url(../images/hd.jpg) center no-repeat;
+    background-size:cover;
+    margin:0;
+}
+
+
+/* MENU */
+
+.header_bck{
+    width:100%;
+    height: 4.5em;
+    background-color: rgba(0, 0, 0, 0.534);
+    transition: background-color 0.5s linear;
+}
+
+
+.header_menu{
+    display: flex;
+    margin:0 auto;
+    width:80%;
+    height: 4.5em;
+    text-decoration:none;
+    font-family: 'Kurale', serif;
+    justify-content: space-between;
+}
+
+
+.header_bck:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+.menu_logo{
+    display:inline-flex;
+    background: url(../images/logo.webp);
+    width: 4em;
+    height: 4em;
+    background-size: cover;
+}
+
+
+.title{
+    display: flex;
+    position: relative;
+    justify-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration:none;
+    color: #f8f8f8;
+    margin: 1em 10px;
+    font-size: 1.5em;
+    cursor:default;
+}
+
+
+.title::after{
+    display: block;
+    position: absolute;
+    top:100%;
+    left:0;
+    content:"";
+    height: 3px;
+    width:100%;
+    background-color: #fce38a;
+    margin-top: 0.1em;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+
+.title:hover::after{
+    opacity: 1;
+}
+
+
+.link_left {
+    text-decoration: none;
+    color: #f8f8f8;
+    text-decoration: none;
+    margin: 1em 10px;
+    font-size: 0.8em;
+    transition: color 1s linear;
+}
+
+
+.menu_left{
+    display:inline-flex;
+    align-items: center;
+    margin: 0.75em 1em;
+}
+
+
+.menu_right{
+    display:flex;
+    align-items: center;
+    margin: .75em 1em;
+}
+
+
+.link_right {
+    text-decoration: none;
+    margin: 1em 10px;
+    color: #f8f8f8;
+    font-size: 0.8em;
+    transition: color 1s linear;
+}
+
+
+.link_right_reg {
+    text-decoration: none;
+    margin: 0.7em 10px;
+    color: #f8f8f8;
+    font-size: 0.8em;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 8px;
+    transition: color 1s linear;
+}
+
+
+.link_left:hover, .link_right:hover, .link_right_reg:hover{
+    color: #fce38a;
+}
+
+
+/* 1ST ITEM */
+.first_item{
+    display: block;
+    margin:0;
+    height: 50vh;
+    width:100%;
+    background-color: #000;
+    z-index: 1;
+}
+
+
+.first_item + body{
+   overflow-x: scroll;
+}
+
+
+.block{
+    display:grid;
+    width:80%;
+    height: 25em;
+    margin: 1.5em auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    margin-top: 5vw;
+}
+
+/*ITEM LEFT COLUMN */
+.left_col{
+    display:grid;
+    z-index: 1;
+}
+
+
+.left_row1{
+    font-family: 'Lato', sans-serif;
+    font-size: 3em;
+    color: #fff;
+    text-align: left;
+    line-height: 60px;
+    max-height: 20vh;
+    overflow: hidden;
+
+}
+
+.left_row2{
+    font-family: 'Kurale', serif; 
+    font-size: 24px;
+    color: #fff;
+    text-align: left;
+    max-height: 35vh;
+    margin-top: -1em;
+    overflow: hidden;
+}
+
+
+.item_btn{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-size:18px;
+    align-items:center;
+    justify-content: center;
+    text-decoration:none;
+    color: #000;
+    background-color: #9E9EE5;
+    width:10em;
+    height: 2.5em;
+    max-height: 5vh;
+    border-radius: 8px;
+    margin-top: 1em;
+    transition:color 0.5s linear, background-color 0.2s linear;
+    overflow: hidden;
+}
+
+
+.item_btn:hover{
+    color:#fce38af1;
+    background-color: #4747D9;
+}
+
+
+.right_col_item1{
+    display:grid;
+    text-align: center;
+    background: url(../images/lemonade.jpg);
+    background-size:cover;
+    z-index:9999999;
+    height: 90%;
+    max-height: 35vh;
+    border-radius: 2%;
+    /* margin-right: 9vw; */
+    z-index: 1;
+    -webkit-mask-image:-webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0) 100%);
+   }
+   
+
+/* SECOND ITEM  */
+
+.second_item{
+    display: block;
+    height: 50vh;
+    width:100%;
+    background-color: #000;
+}
+
+
+.right_col_item2{
+    display:grid;
+    text-align: center;
+    background: url(../images/vkusno.png);
+    background-size:cover;
+    max-height: 35vh;
+    z-index:9999999;
+    height: 90%;
+    border-radius: 2%;
+    /* margin-right: 9vw; */
+    z-index: 1;
+    -webkit-mask-image:-webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0) 100%);
+   }
+
+
+   /* Bottom panel */
+
+.bottom_list{
+    display:grid;
+    width:100%;
+    /* position: absolute;
+    top: 175vh;
+    left:0; */
+    background-color: none;
+}
+
+
+.bottom_block{
+    display:grid;
+    width:80%;
+    height: 20em;
+    margin: 1.5em auto;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+
+}
+
+
+.left_element{
+    display:grid;
+    /* margin-left: 9vw; */
+    grid-column-start: 1;
+    grid-template: 1fr 0.75fr 0.25fr/ 1fr;
+    grid-gap: 10px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding:15px;
+    max-height: 20em;
+}
+
+
+.middle_element{
+    display:grid;
+    grid-column-start: 2;
+    grid-template: 1fr 0.75fr 0.25fr/ 1fr;
+    grid-gap: 10px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding:15px;
+    max-height: 20em;
+}
+
+
+.right_element{
+    display:grid;
+    grid-column-start: 3;
+    grid-template: 1fr 0.75fr 0.25fr/ 1fr;
+    grid-gap: 10px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding:15px;
+    max-height: 20em;
+    /* margin-right: 9vw; */
+}
+
+
+.image_bottom{
+    display:block;
+    background: url(../images/cofee1.jpg);
+    border-radius: 10px;
+    background-size:cover;
+    z-index: 1;
+}
+
+
+.image_bottom_2{
+    display:block;
+    background: url(../images/cofee2.jpg);
+    border-radius: 10px;
+    background-size:cover;
+    z-index: 1;
+}
+
+
+.image_bottom_3{
+    display:block;
+    background: url(../images/cofee3.jpg);
+    border-radius: 10px;
+    background-size:cover;
+    z-index: 1;
+}
+
+
+.text_bottom{
+    overflow: scroll;
+    font-family: 'Kurale', serif;
+    color:#000;
+
+}
+
+
+.button_bottom{
+    border-radius: 10px;
+    font-family: 'Kurale', serif;
+    font-size: 2em;
+    font-weight: 400;
+
+    transition: background-color 0.2s linear;
+}
+
+
+.button_bottom:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+
+
+
+
+/* MEDIA */
+
+
+
+@media (max-width:1200px){
+    .container{
+        min-width: 970px;
+    }
+    .title{
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width:992px){
+    .container{
+        min-width: 750px;
+    }
+    .title{
+        font-size: 0.7em;
+    }
+    .header_img{
+    min-width: 750px;
+    }
+}
+
+@media (max-width:767px){
+    .container{
+        min-width: none;
+    }
+}
