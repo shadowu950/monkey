@@ -16,7 +16,7 @@ body{
 
 .container{
     max-width:1900px;
-    width:98wv;
+    width:1280px;
     margin: 0 auto;
     padding: 1;
 }
@@ -48,7 +48,7 @@ body{
 .header_menu{
     display: flex;
     margin:0 auto;
-    width:60%;
+    width:80%;
     height: 4.5em;
     text-decoration:none;
     font-family: 'Kurale', serif;
@@ -174,7 +174,7 @@ body{
 
 .block{
     display:grid;
-    width:60%;
+    width:80%;
     height: 25em;
     margin: 1.5em auto;
     grid-template-columns: 1fr 1fr;
@@ -291,7 +291,7 @@ body{
 
 .bottom_block{
     display:grid;
-    width:60%;
+    width:80%;
     height: 20em;
     margin: 1.5em auto;
     grid-template: 1fr / 1fr 1fr 1fr;
